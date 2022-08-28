@@ -10,13 +10,36 @@ namespace FirstProject
     {
         static void Main(string[] args)
         {
-            for (int i = 0; i < 10; i+=2)//вывод только четных чисел в столбик
+            for (int i = 0; i < 5; i+=2)//вывод только четных чисел в столбик
             {
                 Console.WriteLine("Value of i: {0}", i);
             }
+
             for (int i = 0; i < 10; i += 2)//вывод только четных чисел в рядок
             {
                 Console.Write("{0} , ", i);
+            }
+
+            for (int i = 1; i < 6; i++)
+            {
+                Console.WriteLine(i*80);
+            }
+            // do-while
+            int a = 0;
+            do
+            {
+                Console.WriteLine(a);
+                a++;
+            } while (a<5);
+
+            //breal - для прикращения действий внутри цикла и переходу к следующему выражению после тела цикла
+            int num = 0;
+            while (num<20)
+            {
+                if (num == 5)
+                    break;
+                Console.WriteLine(num);
+                num++;
             }
         }
     }
