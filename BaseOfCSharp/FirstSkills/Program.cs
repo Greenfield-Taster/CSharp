@@ -41,6 +41,23 @@ namespace FirstProject
                 Console.WriteLine(num);
                 num++;
             }
+            //логический оператор
+            
+            //int age = 42;
+            //int grade = 75;
+            //if (age >16 && age<80 && grade>50)
+            //{
+            //    Console.WriteLine("Hey there");
+            //
+
+            //or
+            int age = 42;
+            int grade = 75;
+            string msg;
+            msg = (age > 16 && age < 80 && grade > 50) ? "Good job" : "I may better";
+            Console.WriteLine(msg);
+
+            
         }
     }
 }
