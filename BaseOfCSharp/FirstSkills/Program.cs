@@ -80,6 +80,16 @@ namespace FirstProject
                 
 
             } while (true);
+            
+            //задача: заменять кратные 3 на *
+            int numb = Convert.ToInt32(Console.ReadLine());
+            for (int i = 1; i <= numb; i++)
+            {
+                if (i % 3 == 0)
+                    Console.WriteLine("*");
+                else
+                    Console.WriteLine(i);
+            }
         }
     }
 }
