@@ -57,7 +57,29 @@ namespace FirstProject
             msg = (age > 16 && age < 80 && grade > 50) ? "Good job" : "I may better";
             Console.WriteLine(msg);
 
-            
+            //calculator
+            do
+            {
+                Console.Write("num1 = ");
+                string str = Console.ReadLine();
+                if (str == "exit")
+                    break;
+
+                int num1 = Convert.ToInt32(str);
+
+                Console.Write("num2 = ");
+                int num2 = Convert.ToInt32(Console.ReadLine());
+
+                int sum = num1 + num2;
+                Console.WriteLine("sum = {0}", sum);
+
+                //Console.WriteLine("Would you want sing out?(yes/no)");
+                //string answer = Console.ReadLine();
+                //if (answer == "yes")
+                //    break;
+                
+
+            } while (true);
         }
     }
 }
